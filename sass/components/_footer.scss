@@ -1,0 +1,21 @@
+.footer {
+    width: 1600px;
+    height: 252px;
+    background: $background-footer;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer__contacts {
+    display: inline-block;
+    margin-top: 75px;
+    width: 231px;
+    text-align: start;
+}

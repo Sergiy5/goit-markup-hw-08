@@ -1,0 +1,48 @@
+.featurs {
+    width: 1170px;
+    margin-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.featurs__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.featurs__item {
+    width: 270px;
+    height: auto;
+    vertical-align: top;
+}
+
+/*особливості-Якості*/
+.featurs__internal {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-text-color;
+}
+
+.featurs__text {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $second-color;
+}
+
+.featurs__box {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}

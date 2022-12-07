@@ -1,0 +1,51 @@
+.modal-window {
+    position: absolute;
+    width: 498px;
+    height: auto;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    background: $forDark-text-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition-property: opacity scale;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    background: $forDark-text-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.close-icon {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    fill: $primary-text-color;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            fill: $accent-color;
+        }
+}
+
