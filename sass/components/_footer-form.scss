@@ -1,14 +1,16 @@
 .subscrib {
-    display: inline-block;
+    /*display: inline-block;
     margin-top: 87px;
     margin-left: 93px;
     width: 570px;
-    height: 86px;
+    height: 86px;*/
+    @media screen and (max-width: 1599px) {
+        margin-top: 60px;
+    }
 }
 
 .subscrib__label {
-    display: block;
-    text-align: start;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     margin-top: 0;
@@ -19,18 +21,15 @@
 }
 
 .subscrib__field {
-    display: flex;
-    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .subscrib__input {
-    display: inline-flex;
     cursor: pointer;
     font-family: inherit;
-    padding: 15px 16px;
     width: 358px;
     height: 50px;
     font-size: 16px;
@@ -45,6 +44,11 @@
     &:focus {
             outline: 1px solid #2F303A;
         }
+    
+    @media screen and (max-width: 1599px) {
+        
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -55,7 +59,7 @@
     align-items: center;
     cursor: pointer;
     box-sizing: border-box;
-    margin-left: 12px;
+    /*margin-left: 12px;*/
     width: 200px;
     height: 50px;
     color: $forDark-text-color;
@@ -80,6 +84,10 @@
     
         &:focus {
             background-color: #188CE8;
+        }
+        @media screen and (max-width: 1599px) {
+            margin-left: auto;
+            margin-right: auto;
         }
 
 }

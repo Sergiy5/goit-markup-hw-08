@@ -1,23 +1,32 @@
 .featurs {
-    width: 1170px;
-    margin-top: 94px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 1599px) {
+        margin: 60px auto;
+    }
 }
 
 
 
 .featurs__list {
-    display: flex;
-    justify-content: space-between;
     list-style: none;
     padding: 0;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .featurs__item {
-    width: 270px;
     height: auto;
     vertical-align: top;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 2 * 15px) / 2);
+    }
 }
 
 /*особливості-Якості*/

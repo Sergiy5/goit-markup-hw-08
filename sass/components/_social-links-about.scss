@@ -5,14 +5,10 @@
     margin-right: auto;
     list-style: none;
     margin-top: 16px;
-    margin-bottom: 30px;
     padding: 0;
     width: 206px;
-}
-.social-list {
+
     &__item {
-        display: flex;
-        margin: 0;
         width: 44px;
         height: 44px;
         border-radius: 50%;
