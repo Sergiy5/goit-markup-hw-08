@@ -1,10 +1,21 @@
 .header-contacts__list {
-    display: inline-block;
+    display: inline-flex;
     align-content: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: 315px;
-    width: 325px;
+    padding: 0;
+    width: 333px;
+    
+    @media screen and (min-width: 1600px){
+        margin-left: 315px;
+    }
+    
+
+    @media screen and (max-width: 1599px) {
+        flex-wrap: wrap;
+        width: 325px;
+        
+    }
+    
 }
 
 .header-contacts__link {

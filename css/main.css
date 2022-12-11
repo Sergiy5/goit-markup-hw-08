@@ -440,16 +440,28 @@ body {
 }
 
 .header-contacts__list {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: 315px;
-  width: 325px;
+  padding: 0;
+  width: 333px;
+}
+@media screen and (min-width: 1600px) {
+  .header-contacts__list {
+    margin-left: 315px;
+  }
+}
+@media screen and (max-width: 1599px) {
+  .header-contacts__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 325px;
+  }
 }
 
 .header-contacts__link {
