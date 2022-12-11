@@ -1,7 +1,8 @@
-.header-contacts {
-    display: inline-flex;
+.header-contacts__list {
+    display: inline-block;
     align-content: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: 315px;
     width: 325px;
 }

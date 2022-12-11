@@ -1,5 +1,15 @@
-.nav {
-    display: inline-block;
+.menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1599px) {
+        width: 516px;
+    }
+    @media screen and (min-width: 1600px) {
+        width: 933px;
+    }
+    
 }
 .nav__list {
     display: inline-flex;

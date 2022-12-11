@@ -78,6 +78,11 @@
             fill: $accent-color;
         }
 }
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
 
 .mobile-menu {
     padding: 0;
