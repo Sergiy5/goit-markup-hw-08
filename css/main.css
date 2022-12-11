@@ -405,6 +405,11 @@ body {
   width: 286px;
   list-style: none;
 }
+@media screen and (max-width: 1599px) {
+  .nav__list {
+    width: 768px;
+  }
+}
 
 .nav__link {
   text-decoration: none;
@@ -451,16 +456,17 @@ body {
   padding: 0;
   width: 333px;
 }
-@media screen and (min-width: 1600px) {
-  .header-contacts__list {
-    margin-left: 315px;
-  }
-}
 @media screen and (max-width: 1599px) {
   .header-contacts__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 325px;
+    min-width: 178px;
+    margin-left: 90px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-contacts__list {
+    margin-left: 315px;
   }
 }
 

@@ -18,6 +18,10 @@
     padding: 0;
     width: 286px;
     list-style: none;
+
+    @media screen and (max-width: 1599px) {
+            width: 768px;
+        }
 }
 
 .nav__link {
