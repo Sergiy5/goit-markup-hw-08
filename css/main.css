@@ -347,8 +347,9 @@ body {
     font-size: 24px;
   }
 }
+
 @media screen and (min-width: 768px) {
-  .logo {
+  .header__logo {
     margin-right: 88px;
     margin-top: 26px;
     margin-bottom: 26px;
@@ -356,9 +357,8 @@ body {
   }
 }
 @media screen and (min-width: 1600px) {
-  .logo {
+  .header__logo {
     margin-right: 93px;
-    margin-top: 26px;
     margin-bottom: 26px;
     font-size: 26px;
   }
