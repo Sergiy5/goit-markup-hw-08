@@ -2,10 +2,10 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         margin: 60px auto;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin: 94px auto;
     }
 }
@@ -31,7 +31,7 @@
     @media screen and (min-width: 768px) {
         width: calc((100% - 2 * 15px) / 2);
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         width: calc((100% - 6 * 15px) / 4);
     }
 }

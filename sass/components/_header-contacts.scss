@@ -5,13 +5,13 @@
     padding: 0;
     width: 333px;
     
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         flex-wrap: wrap;
         min-width: 178px;
         margin-left: 90px;
     }
 
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
         margin-left: 315px;
     }    
 }

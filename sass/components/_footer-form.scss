@@ -1,8 +1,8 @@
 .subscrib {
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         margin-top: 60px;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: inline-flex;
         
         width: 570px;
@@ -27,7 +27,7 @@
     padding: 0;
     text-align: center;
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
     }
 }
@@ -50,7 +50,7 @@
             outline: 1px solid #2F303A;
         }
     
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         
         margin-bottom: 20px;
     }
@@ -90,11 +90,11 @@
         &:focus {
             background-color: #188CE8;
         }
-        @media screen and (max-width: 1599px) {
+        @media screen and (max-width: 1199px) {
             margin-left: auto;
             margin-right: auto;
         }
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
             margin-left: 12px;
         }
 

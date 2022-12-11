@@ -3,7 +3,7 @@
     margin-right: auto;
     height: auto;
     background: $background-footer;
-    max-width: 1600px;
+    
 }
 
 .footer__list {
@@ -12,10 +12,10 @@
     padding-bottom: 60px;
     list-style: none;
 
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
-    @media screen and (min-width: 1599px) {
+    @media screen and (min-width: 1200px) {
         display: inline-flex;
     }
    
