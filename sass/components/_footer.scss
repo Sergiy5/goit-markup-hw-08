@@ -1,6 +1,9 @@
 .footer {
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     background: $background-footer;
+    max-width: 1600px;
 }
 
 .footer__list {

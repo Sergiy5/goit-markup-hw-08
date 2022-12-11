@@ -1,3 +1,9 @@
+.page-header .container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .menu {
     display: flex;
     padding: 0;
@@ -19,10 +25,7 @@
     }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-    background-color: $accent-color;
-}
+
 
 .menu-container {
     position: fixed;
@@ -44,6 +47,14 @@
         transform: translateX(0);
     }
 }
+
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
 .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -52,19 +63,16 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-
-    cursor: pointer;
     border: none;
     border-radius: 50%;
     outline: none;
-    background-color: transparent;
-}
+    cursor: pointer;
+    background: #000000;
 
-.menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
+    &:hover,
+    &:focus {
+            background-color: $accent-color;
+        }
 }
 
 .mobile-menu {

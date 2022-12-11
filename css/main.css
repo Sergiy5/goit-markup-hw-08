@@ -318,6 +318,7 @@ body {
   margin: 0 auto;
   height: auto;
   background: #fff;
+  max-width: 1600px;
 }
 
 .header {
@@ -462,6 +463,7 @@ body {
   background: #C4C4C4;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -950,8 +952,11 @@ body {
 }
 
 .footer {
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   background: #2F303A;
+  max-width: 1600px;
 }
 
 .footer__list {
@@ -1520,6 +1525,19 @@ body {
   background: #188CE8;
 }
 
+.page-header .container {
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1539,11 +1557,6 @@ body {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: #2196F3;
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -1567,6 +1580,13 @@ body {
           transform: translateX(0);
 }
 
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -1581,18 +1601,14 @@ body {
           justify-content: center;
   margin: 0;
   padding: 0;
-  cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
-  background-color: transparent;
+  cursor: pointer;
+  background: #000000;
 }
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+.menu-toggle:hover, .menu-toggle:focus {
+  background-color: #2196F3;
 }
 
 .mobile-menu {
