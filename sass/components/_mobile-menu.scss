@@ -148,11 +148,6 @@
     margin-bottom: 32px;
 }
 
-/*.menu-contacts__icon {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-}*/
 
 .mobile-mail {
     @media screen and (max-width: 767px) {
@@ -170,11 +165,11 @@
 .mobile-tel {
     @media screen and (max-width: 767px) {
         margin-bottom: 32px;
-        font-family: 'Roboto';
+        font-family: $font-family;
         font-style: normal;
         font-weight: 500;
         font-size: 34px;
-        line-height: 40px;
+        line-height: calc(40/34);
         letter-spacing: 0.02em;
         color: $accent-color;
     }
@@ -183,8 +178,13 @@
 .menu-socials__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap:calc(100% - 6*5px)/4;    
     padding: 0;
     max-width: 357px;
+
+    @media (max-width: 400px) {
+        flex-wrap: wrap;
+    }
 }
 
 .menu-socials__list :not(:first-child) {

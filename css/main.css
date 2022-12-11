@@ -1680,11 +1680,6 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  /*.menu-contacts__icon {
-      @media screen and (max-width: 767px) {
-          display: none;
-      }
-  }*/
 }
 .mobile-menu .mobile-menu .link {
   display: block;
@@ -1761,7 +1756,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.1764705882;
     letter-spacing: 0.02em;
     color: #2196F3;
   }
@@ -1773,8 +1768,16 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: calc(100% - 30px)/4;
+      flex-wrap: calc(100% - 30px)/4;
   padding: 0;
   max-width: 357px;
+}
+@media (max-width: 400px) {
+  .mobile-menu .menu-socials__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .mobile-menu .menu-socials__list :not(:first-child) {
   padding-left: 10px;
