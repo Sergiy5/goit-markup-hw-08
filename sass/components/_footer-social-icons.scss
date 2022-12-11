@@ -3,11 +3,9 @@
         text-align: center;
         margin-top: 60px;
     }
-    
-    @media screen and (min-width: 1600px) {
         
-        margin-top: 87px;
-        margin-left: 70px;
+    @media screen and (min-width: 1600px) {
+        margin-right: 94px;
     }
 }
 
@@ -18,9 +16,11 @@
     line-height: 1.2;
     color: $forDark-text-color;
 }
-
-.foote__rsocial-list {
-    width: 206px;
+.footer__social-list {
+    @media screen and (min-width: 768px) {
+        width: 206px;
+        
+    }
 }
 
 .social-list__icon--footer {

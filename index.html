@@ -24,47 +24,60 @@
 
       <header class="header">
         <div class="container">
+          
           <a href="./index.html" class="logo header__logo">
             Web<span class="header__half-logo">Studio</span></a
           >
 
           <!--Navigation-->
-
-          <!--<nav class="nav">
+          
+          <button type="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+              
+              <use class="menu-icon" href="./images/icons.svg#menu_24px"></use>
+            </svg>
+          </button>
+          <nav class="menu">
             <ul class="list nav__list">
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./index.html">Студія</a>
+                <a class="link nav__link nav__link--current" href="./index.html">Студія</a>
               </li>
 
               <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+                <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link id" href="#contacts">Контакти</a>
+                <a class="nav__link link id" href="#contacts">Контакти</a>
               </li>
             </ul>
-          </nav>
-          <div class="header-contacts">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com"
+          
+          <ul class="header-contacts__list list">
+            <li class="header-contacts__item"><a class="header-contacts__link mobile-mail link" href="mailto:info@devstudio.com"
               ><svg class="header-contacts__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com</a
             >
-            <a class="header-contacts__link" href="tel:+380961111111"
+            </li>
+            <li class="header-contacts__item"><a class="header-contacts__link mobile-tel link" href="tel:+380961111111"
               ><svg class="header-contacts__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
-          </div>-->
-        </div>
+            </li>
+          </ul>
+          </nav>
       </header>
 
       <!--Hero-->
-
+      
       <section class="hero">
+        
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero__modal-btn" data-modal-open>Замовити послугу</button>
+      
       </section>
 
       <!--Main content-->
@@ -176,9 +189,10 @@
             <ul class="list about__list">
               <li class="about__item">
                 
-                  <img
-                    src="./images/photo1.jpg"
-                    width="270"
+                  <img class="about__img"
+                    srcset="./images/1img@1x.jpg 270px, ./images/1img@2x.jpg 540px"
+                    src="./images/1img@2x.jpg"
+                    sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw"
                     alt="Ігор Дем'яненко Product Designer"
                   />
                   <h3 class="about__name">Ігор Дем'яненко</h3>
@@ -230,9 +244,10 @@
               </li>
               <li class="about__item">
                 
-                  <img
-                    src="./images/photo2.jpg"
-                    width="270"
+                  <img class="about__img"
+                  srcset="./images/2img@1x.jpg 270px, ./images/2img@2x.jpg 540px"
+                    src="./images/2img@2x.jpg"
+                    sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw"
                     alt="Ольга Рєпіна Frontend Developer"
                   />
                   <h3 class="about__name">Ольга Рєпіна</h3>
@@ -284,9 +299,10 @@
               </li>
               <li class="about__item">
                 
-                  <img
-                    src="./images/photo3.jpg"
-                    width="270"
+                  <img class="about__img"
+                  srcset="./images/3img@1x.jpg 270px, ./images/3img@2x.jpg 540px"
+                    src="./images/3img@2x.jpg"
+                    sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw"
                     alt="Микола Тарасов Marketing"
                   />
 
@@ -339,9 +355,10 @@
               </li>
               <li class="about__item">
                 
-                  <img
-                    src="./images/photo4.jpg"
-                    width="270"
+                  <img class="about__img"
+                  srcset="./images/4img@1x.jpg 270px, ./images/4img@2x.jpg 540px"
+                    src="./images/4img@2x.jpg"
+                    sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw"
                     alt="Михайло Єрмаков UI Designer"
                   />
                   <h3 class="about__name">Михайло Єрмаков</h3>
@@ -443,6 +460,7 @@
         <div class="container">
         <ul class="list footer__list">
           <li class="footer__contacts footer__item">
+            <div>
             <a href="./index.html" class="logo footer__logo">
               Web<span class="footer__half-logo">Studio</span></a>
           
@@ -463,11 +481,14 @@
                 </li>
               </ul>
             </address>
+          </div>
           </li>
+          
         
           <!--Social links-->
 
          <li class="footer-icons footer__item">
+          <div>
             <h4 class="footer-icons__title">ПРИЄДНУЙТЕСЬ</h4>
             <ul class="list social-list footer__social-list" >
                     <li class="social-list__item"><a
@@ -512,11 +533,13 @@
                     </a>
                     </li>
                   </ul>
+                </div>
                 </li>
               
 <!--SUBSCRIBE FORM-->
 
-            <li class="subscrib footer__item">
+            <li class="subscrib">
+              <div>
               <h4 class="subscrib__label"> Підпишіться на розсилку</h4>
               <ul class="list subscrib__field">
                 <li><input type="text" class="subscrib__input" name="email" placeholder="E-mail"></li>
@@ -526,6 +549,7 @@
                   </button>
                 </li>
               </ul>
+              </div>
             </li>
         </ul>
         </div>
@@ -571,8 +595,58 @@
           <button type="submit" class="sub-button">Відправити</button>
         </form>
       </div>
-      </div>  
+      </div>
+
+<!--Mobile-menu-->
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="menu-toggle js-open-menu">
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+              <use class="cross-icon" href="./images/icons.svg#close_menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <ul class="list menu__list">
+              <li class="menu__item">
+                <a class="link menu__link menu__link--current" href="./index.html">Студія</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link id" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          
+          <ul class="menu-contacts__list list">
+            <li class="menu-contacts__item"><a class="menu-contacts__link mobile-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            </li>
+            <li class="menu-contacts__item"><a class="menu-contacts__link mobile-tel link" href="tel:+380961111111"
+              >
+              +38 096 111 11 11</a
+            >
+            </li>
+          </ul>
+          <ul class="menu-socials__list list">
+            <li class="menu-socials__item"><a  class="menu-link link" href="">Instagram</a></li>
+            <li class="menu-socials__item"><a  class="menu-link link" href="">Twitter</a></li>
+            <li class="menu-socials__item"><a  class="menu-link link" href="">Facebook</a></li>
+            <li class="menu-socials__item"><a  class="menu-link link" href="">LinkedIn</a></li>
+          </ul>
+          </div>
+      </div>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>  
     </div>
+    
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

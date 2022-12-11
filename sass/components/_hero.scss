@@ -1,14 +1,38 @@
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
+    text-align: center;
     background: $background-hero;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/HERO.jpg);
-    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 118px;
+        background-size: cover;
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(/images/hero\ mob\ img.jpg)
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 118px;
+        background-size: cover;
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(/images/hero\ tab\ img.jpg)
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding-top: 210px;
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/HERO.jpg);
+    }
 }
 
 .hero__title {
@@ -16,18 +40,32 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.35;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: $forDark-text-color;
+
+    @media screen and (max-width: 1599px) {
+        min-width: 410px;
+        max-width: 455px;
+        
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+    }
+    @media screen and (min-width: 1600px) {
+    min-width: 696px;
+    max-width: 725px;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.35;
+    }
 }
 
 .hero__modal-btn {
     cursor: pointer;
-    padding: 15px 32px;
+    padding: 10px 24px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1, 87;
@@ -44,5 +82,12 @@
         &:active {
             background: $buttonActiv-color;
         }
+
+    @media screen and (max-width: 1599px) {
+        margin-bottom: 118px;
+    }
+    @media screen and (min-width: 1600px) {
+        margin-bottom: 200px;
+    }
 }
 
