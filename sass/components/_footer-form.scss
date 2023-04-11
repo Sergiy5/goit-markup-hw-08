@@ -1,0 +1,103 @@
+.subscrib {
+    @media screen and (max-width: 1199px) {
+        margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
+        
+        width: 570px;
+        height: 86px;        
+    }
+}
+
+.subscrib__label {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    color: $forDark-text-color;
+}
+
+.subscrib__field {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.subscrib__input {
+    cursor: pointer;
+    font-family: inherit;
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: calc(20/16);
+    align-items: center;
+    letter-spacing: $letter-spacing;
+    color: $forDark-text-color;
+    background: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    &:focus {
+            outline: 1px solid #2F303A;
+        }
+    
+    @media screen and (max-width: 1199px) {
+        
+        margin-bottom: 20px;
+    }
+}
+
+.subscrib__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    color: $forDark-text-color;
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition-property: background-color;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:active {
+            background-color: red;
+        }
+
+        &::after {
+            display: inline-block;
+            // text-align: center;
+            content: ' ';
+            margin-left: 10px;
+            width: 24px;
+            height: 24px;
+            background-image: url('../images/send.svg');
+        }
+        
+        &:focus {
+            background-color: #188CE8;
+        }
+        @media screen and (max-width: 1199px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 12px;
+        }
+
+}
+

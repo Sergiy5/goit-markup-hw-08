@@ -1,0 +1,42 @@
+@import "./utils/_vars.scss";
+@import "./base/modern-normalize";
+
+@import "./base/base.scss";
+@import "./components/_body.scss";
+
+@import "./components/_body.style.scss";
+
+@import "./components/_header.scss";
+@import "./components/header-logo";
+@import "./components/_navigation.scss";
+@import "./components/_header-contacts.scss";
+
+@import "./components/_hero.scss";
+
+@import "./base/featurs-title-hidden";
+@import "./components/_featurs.scss";
+
+@import "./components/employment";
+
+@import "./components/about-team";
+@import "./components/social-links-about";
+
+@import "./components/clients";
+
+@import "./components/footer";
+@import "./components/footer-logo";
+@import "./components/footer-contacts";
+@import "./components/footer-social-icons";
+@import "./components/footer-form";
+
+@import "./components/backdrop";
+
+@import "./components/modal-window";
+@import "./components/modal-form";
+
+@import "./components/mobile-menu";
+
+
+@import "./components/portfolio-buttons";
+
+@import "./components/portfolio-projects";

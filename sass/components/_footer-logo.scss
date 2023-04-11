@@ -1,0 +1,10 @@
+.footer__logo {
+    @media screen and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer__half-logo {
+    color: $forDark-text-color;
+
+}
